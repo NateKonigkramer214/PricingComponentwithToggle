@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PricingComponent</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Pricing Options</h1>
+    <button id="toggleButton">Toggle Payment</button>
+    <div class="price-options-container">
+      <div class="price-option">
+        <h2>Basic</h2>
+        <p class="price" data-monthly="$10/month" data-annual="$100/year">
+          $10/month
+        </p>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+        <button>Sign Up</button>
+      </div>
+      <div class="price-option">
+        <h2>Standard</h2>
+        <p class="price" data-monthly="$20/month" data-annual="$200/year">
+          $20/month
+        </p>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+        <button>Sign Up</button>
+      </div>
+      <div class="price-option">
+        <h2>Premium</h2>
+        <p class="price" data-monthly="$30/month" data-annual="$300/year">
+          $30/month
+        </p>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+        <button>Sign Up</button>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("toggleButton")
+        .addEventListener("click", function () {
+          const prices = document.querySelectorAll(".price");
+          prices.forEach((price) => {
+            const monthlyPrice = price.getAttribute("data-monthly");
+            const annualPrice = price.getAttribute("data-annual");
+            if (price.textContent === monthlyPrice) {
+              price.textContent = annualPrice;
+            } else {
+              price.textContent = monthlyPrice;
+            }
+          });
+        });
+    </script>
+  </body>
+</html>
