@@ -79,6 +79,24 @@
             }
           });
         });
+      // Function to handle the "Learn More" button click
+      function handleLearnMoreClick(event) {
+        const priceOption = event.target.closest(".price-option");
+        const price = priceOption.querySelector(".price").textContent;
+        alert(
+          `You selected the ${
+            priceOption.querySelector("h2").textContent
+          } plan for ${price}`
+        );
+      }
+
+      // Add event listeners to the "Learn More" buttons
+      const learnMoreButtons = document.querySelectorAll(
+        ".price-option button"
+      );
+      learnMoreButtons.forEach((button) => {
+        button.addEventListener("click", handleLearnMoreClick);
+      });
     </script>
   </body>
 </html>
