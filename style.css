@@ -26,7 +26,7 @@ body {
 
   .price-option p {
     color: #333;
-    font-size: 1.5em;
+    font-size: 4em;
     margin: 10px 0;
   }
 
@@ -48,7 +48,7 @@ body {
     cursor: pointer;
     font-size: 1em;
     margin: 10px 0;
-    padding: 10px 20px;
+    padding: 10px 80px;
   }
 
   #toggleButton {
@@ -76,3 +76,4 @@ body {
     width: 300px;
     text-align: center;
   }
+
