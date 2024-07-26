@@ -14,7 +14,6 @@ Here is a showcase image of the pricing component:
 
 ![Pricing Component Showcase](/assets/projectshowcase.png)
 
-Feel free to replace `/path/to/showcase-image.png` with the actual path to your showcase image.
 
 ## Installation
 
