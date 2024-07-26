@@ -10,7 +10,7 @@ This repository contains a pricing component with a toggle feature. The pricing 
 
 ## Style
 
-<img alt="projects" src="/assets/projectshowcase.jpg>
+<img alt="projects" src="/assets/projectshowcase.png>
 
 ## Installation
 
