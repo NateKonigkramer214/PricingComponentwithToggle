@@ -8,16 +8,12 @@ This repository contains a pricing component with a toggle feature. The pricing 
 - Toggle feature to switch between plans
 - Responsive design
 
-## Style
-
-<img alt="projects" src="/assets/projectshowcase.png>
-
 ## Installation
 
 To use this pricing component in your project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
-2. Navigate to the project directory: `cd your-repo`
+1. Clone the repository: `git clone https://github.com/NateKonigkramer214/PricingComponentwithToggle`
+2. Navigate to the project directory: `cd PricingComponentwithToggle`
 3. Install dependencies: `npm install`
 4. Run the project: `npm start`
 
